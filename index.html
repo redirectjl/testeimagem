@@ -56,7 +56,8 @@
         }
     </style>
 
-    <script src="./js/scroll-test.js"> defer </script>
+    <!-- <script src="./js/scroll-test.js"> defer </script> -->
+    <script src="./js/scroll-to-button.js"></script>
 
     <link rel="stylesheet" id="wp-block-library-css" href="css/style.min_2.css" media="all">
     <style id="classic-theme-styles-inline-css">
@@ -794,7 +795,7 @@
                                 <div class="elementor-widget-container">
                                     <div class="gerador my-3">
                                         <img decoding="async" class="mainimg" id="main-img" src="images/astiger_criptografado.webp" onerror="this.onerror=null; this.src='images/TIGRINHO.png'" alt="">
-                                        <ul class="test1" >
+                                        <ul class="list v-none">
                                             <li>
                                                 <img decoding="async" src="images/iconentrada.png"  alt="">
                                                 <h3>
@@ -814,7 +815,7 @@
                                                 </h3>
                                             </li>
                                         </ul>
-                                        <div class="footer" id="test-10" >
+                                        <div class="footer v-none">
                                             <div class="animated-text">
                                                 <span>MULTIPLICADOR DE 2.500X ATIVADO | FUNCIONA APENAS COM A FALHA NA PLATAFORMA |
                                                     MULTIPLICADOR DE 2.500X ATIVADO | FUNCIONA APENAS COM A FALHA NA PLATAFORMA |
@@ -829,9 +830,19 @@
     
                                     <style>
                                         
-                                        #test-10,
-                                        .test1 {
-                                            display: none !important;
+                                        .v-none {
+                                            opacity: 0 !important;
+                                            transition: opacity .4s;
+                                        }
+
+                                        #main-img{
+                                            height: 900px;
+                                            opacity: 0;
+                                            transition: opacity .4s;
+                                        }
+
+                                        #main-img.show{
+                                            opacity: 1;
                                         }
 
                                         main {
