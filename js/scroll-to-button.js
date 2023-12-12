@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const targetPosition = window.scrollY + targetSection.getBoundingClientRect().top - offset;
 
     window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-  }, 500);
+  }, 600);
 
   let mainImg = document.querySelector("#main-img");
 
